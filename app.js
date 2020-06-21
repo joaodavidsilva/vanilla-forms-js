@@ -17,7 +17,14 @@ function animatedForm() {
 
             if (validateUser(user, inputClassname)) {
                 nextSlide(parent, nextForm);
+            } else {
+                parent.style.animation = 'shake 0.5s ease';
             }
+
+            parent.addEventListener(
+                'animationend',
+                () => (parent.style.animation = '')
+            );
         });
     });
 }
