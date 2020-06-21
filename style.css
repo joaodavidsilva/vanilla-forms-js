@@ -54,9 +54,3 @@ div.innactive {
     pointer-events: none;
     transform: translate(-50%, 50%);
 }
-
-div.active {
-    opacity: 1;
-    pointer-events: all;
-    transform: translate(-50%, -50%);
-}
